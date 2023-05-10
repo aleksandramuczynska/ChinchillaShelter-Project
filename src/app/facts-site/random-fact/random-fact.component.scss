@@ -1,0 +1,42 @@
+section {
+  min-height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4ead5;
+  flex-direction: column;
+
+  .fact {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px dotted black;
+    font-size: 26px;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 40px;
+    padding: 20px;
+    transform: translateY(7%);
+  }
+
+  .text {
+    font-size: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    transform: translateY(-5%);
+    user-select: none;
+  }
+
+  .change {
+    border-bottom: 2px dashed black;
+  }
+
+  .change:hover {
+    color: coral;
+    border-bottom: 2px dashed coral;
+  }
+}

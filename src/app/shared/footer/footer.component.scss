@@ -1,0 +1,21 @@
+.footer {
+  position: relative;
+  display: flex;
+  background-image: linear-gradient(to bottom right, #88A47C, #CCD6A6);
+  //background-color: #CCD6A6;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  margin: 0 auto;
+  font-family: 'Dosis', sans-serif;
+  user-select: none;
+
+  .creator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0px 20px 10px 0px;
+    font-size: 13px;
+    text-align: end;
+  }
+}

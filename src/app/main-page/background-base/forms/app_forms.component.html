@@ -1,0 +1,62 @@
+<div class="container">
+  <h2>Want to volunteer as our Helper or adopt a <span class="underline color">Chinchilla?</span></h2>
+  <h3>Let us know by submitting one of the forms below!</h3>
+  <button (click)="showVolunteer()">Volunteer form</button>
+  <button (click)="showAdoption()">Adoption form</button>
+  <form #volunteerForm="ngForm" *ngIf="visibleForm === 1">
+    <div class="form-group">
+      <label for="firstName">First Name</label><br/>
+      <input #name = 'ngModel' type="text" name="firstName" class="form-control" ngModel required maxlength="20" minlength="2">
+      <div *ngIf="name.touched && name.invalid" class="alert">Incorrect length</div>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="surname">Surname</label><br/>
+      <input #surname = 'ngModel' type="text" name="surname" class="form-control" ngModel required maxlength="20" minlength="2">
+      <div *ngIf="surname.touched && surname.invalid" class="alert">Incorrect length</div>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="age">Age</label><br/>
+      <input type="number" name="age" class="form-control" ngModel required maxlength="3" >
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="email">E-mail</label><br/>
+      <input type="email" name="email" class="form-control" ngModel required>
+    </div>
+    <pre></pre>
+    <button class="btn btn-submit" type="submit">Submit!</button>
+  </form>
+  <form #adoptionForm="ngForm" *ngIf="visibleForm === 2">
+    <div class="form-group">
+      <label for="firstName">First Name</label><br/>
+      <input #name = 'ngModel' type="text" name="firstName" class="form-control" ngModel required maxlength="20" minlength="2">
+      <div *ngIf="name.touched && name.invalid" class="alert">Incorrect length</div>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="surname">Surname</label><br/>
+      <input #surname = 'ngModel' type="text" name="surname" class="form-control" ngModel required maxlength="20" minlength="2">
+      <div *ngIf="surname.touched && surname.invalid" class="alert">Incorrect length</div>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="age">Age</label><br/>
+      <input type="number" name="age" class="form-control" ngModel required maxlength="3">
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="chinchillaName">Chosen Chinchilla's name</label><br/>
+      <input type="string" name="chinchillaName" class="form-control" ngModel>
+    </div>
+    <pre></pre>
+    <div class="form-group">
+      <label for="email">E-mail</label><br/>
+      <input type="email" name="email" class="form-control" ngModel required>
+    </div>
+    <pre></pre>
+    <button class="btn btn-submit" type="submit">Submit!</button>
+  </form>
+  <button (click)="hideForms()" class='btn btn-hide' *ngIf="visibleForm != 0">Hide forms</button>
+</div>

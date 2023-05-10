@@ -1,0 +1,12 @@
+<section class="chinchilla_greeting">
+  <h2>Meet our Chinchillas!</h2>
+</section>
+<section class="chinchillas_pics">
+  <ul>
+    <ng-container *ngFor="let singleChinchilla of chinchillas">
+      <app-single-chinchilla [chinchilla]="singleChinchilla"></app-single-chinchilla>
+
+    </ng-container>
+
+  </ul>
+</section>

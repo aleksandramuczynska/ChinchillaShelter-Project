@@ -1,0 +1,46 @@
+section {
+  position: absolute;
+  display: block;
+  width: 227px;
+  //width: 15%;
+  height: auto;
+  top: 0;
+  right: 0;
+  margin-top: 84px;
+  background-color: #dae2b6;
+  font-family: "Source Sans Pro", sans-serif;
+
+  button {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border-color: black;
+    border-width: 1px;
+    background-color: #dae2b6;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #88a47c;
+  }
+
+  .top {
+    border-style: solid solid none solid;
+  }
+
+  .middle {
+    border-style: solid;
+  }
+
+  .bottom {
+    border-style: solid solid solid solid;
+  }
+
+  h2 {
+    top: 0;
+    right: 0;
+    font-size: 60px;
+  }
+}

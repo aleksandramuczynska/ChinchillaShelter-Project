@@ -1,0 +1,47 @@
+.filter {
+  top: 0;
+  left: 0;
+  .main {
+    width: 700px;
+    height: 550px;
+    position: fixed;
+    text-align: center;
+    background-color: red;
+    align-items: center;
+    top: 15%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fffbe9;
+    font-family: "Source Sans Pro", sans-serif;
+    border-radius: 10px;
+    border: solid;
+    //user-select: text;
+
+    img {
+      width: 400px;
+      height: auto;
+      max-height: 300px;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border: dotted;
+    }
+
+    div {
+      margin: 13px;
+    }
+    .txt {
+      border-bottom: 1px solid #000;
+      padding-bottom: 3px;
+      margin-top: 20px;
+    }
+  }
+
+  .lower {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

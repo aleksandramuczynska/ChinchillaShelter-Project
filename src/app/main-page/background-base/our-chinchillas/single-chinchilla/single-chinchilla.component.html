@@ -1,0 +1,8 @@
+<li class="chinchilla" >
+  <img src="{{chinchilla.image}}" />
+  <br>
+  <p class="chinchilla_name" (click)="showDetail()">{{chinchilla.name}} </p>
+  <section *ngIf="visible" >
+    <app-chilla-details [chinchilla]="this.chinchilla" (newVisibilityValue)="changeVisibility($event)"></app-chilla-details>
+  </section>
+</li>

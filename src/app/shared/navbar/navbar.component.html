@@ -1,0 +1,17 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
+<nav>
+  <div class = 'name_class' routerLink="/">
+    <img width="60px" height="60px" src="https://cdn-icons-png.flaticon.com/512/47/47342.png">
+    <!-- Credit for the icon goes to the Freepik site-->
+    <h1>Chinchilla Shelter</h1>
+  </div>
+  <div class="div_button">
+    <button (click) = "changeVisibility()">Go to</button>
+  </div>
+  <ul *ngIf="isVisible">
+    <app-hidden-menu></app-hidden-menu>
+  </ul>
+  <button class="scroll_up" (click)="scrollToTop()"></button>
+</nav>

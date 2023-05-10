@@ -1,0 +1,19 @@
+.main_background{
+  background-color: #F4EAD5;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0px;
+  min-height: 608px;
+
+  .main_body_sheet{
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 580px;
+    padding-bottom: 30px;
+  }
+}
